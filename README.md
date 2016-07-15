@@ -7,6 +7,7 @@ Example:
 ```html
 <div id="wrapper">this is some text</div>
 <script>$('#wrapper').kTextFit();</script>
+```
 
 Other text resizers, such as [FitText](http://fittextjs.com/) and [FlowType](http://simplefocus.com/flowtype/) require you to enter a compression factor by hand. kTextFit figures out the right factor automatically.
 
