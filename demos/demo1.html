@@ -1,0 +1,19 @@
+<!html>
+<html>
+	<head>
+		<script src="http://code.jquery.com/jquery-3.1.0.slim.min.js"></script>
+		<script src="../kTextFit.js"></script>
+		<script>
+			$(()=>{
+				$('p').kTextFit();
+			});
+		</script>
+	</head>
+	<body>
+		<div style="width:60%;border:1px solid #000;margin:20px auto;">
+				<p>This is an example line. It will expand to fill the width of the table cell.</p>
+				<p>Here is another line. It is smaller but still fits.</p>
+				<p>This line is longer. Notice that the font size reduces in order that the text fill the width of the table cell it is in.</p>
+		</div>
+	</body>
+</html>
