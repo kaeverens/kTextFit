@@ -31,7 +31,7 @@
 		$shadow.remove();
 		$this
 			.css({
-				'font-size': Math.floor(10/(w2/w)),
+				'font-size': 10/(w2/w),
 				'overflow':'hidden',
 				'text-overflow': 'ellipsis',
 				'white-space':'nowrap'
@@ -49,14 +49,12 @@
 		});
 	};
 	function cleanupDisconnectedElements() { // garbage collection for disconnected elements
-		console.log('cleaning up');
 		for (var i=elements.length-1;i>-1;--i) {
 			if (!elements[i].isConnected) { // element not connected to DOM. remove it
 				elements[i]=elements[elements.length-1];
 				elements.pop();
 			}
 		}
-		console.log(elements);
 	}
 	$(window).on('resize', function() {
 		for (var i=elements.length-1;i>-1;--i) {
