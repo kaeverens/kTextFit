@@ -20,3 +20,20 @@ var $el=$('<div style="width:100px;border:1px solid #000"/>').text('example text
 // now attach to the DOM
 $el.appendTo('body');
 ```
+
+Options:
+| Option | Default   | Description                |
+| ------ | --------- | -------------------------- |
+| min    | 0         | Minimum font size to allow |
+| max    | +Infinity | Maximum font size to allow |
+
+Example:
+```html
+<div id="wrapper">this is some text</div>
+<script>
+$('#wrapper').kTextFit({
+	'min':10,
+	'max':16
+});
+</script>
+```
