@@ -22,10 +22,12 @@ $el.appendTo('body');
 ```
 
 Options:
-| Option | Default   | Description                |
-| ------ | --------- | -------------------------- |
-| min    | 0         | Minimum font size to allow |
-| max    | +Infinity | Maximum font size to allow |
+<table><thead><tr><th><Option</th><th>Default</th><th>Description</th></tr></thead>
+<tbody>
+<tr><td>min</td><td>0</td><td>Minimum font size to allow</td></tr>
+<tr><td>max</td><td>Number.POSITIVE_INFINITY</td><td>Maximum font size to allow</td></tr>
+</tbody>
+</table>
 
 Example:
 ```html
